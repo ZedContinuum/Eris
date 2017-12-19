@@ -9,7 +9,7 @@ import (
 	"github.com/ZedContinuum/mobile/event/touch"
 	"github.com/ZedContinuum/mobile/gl"
 	"os"
-	"zedcontinuum.com/Zed/Eris/Events"
+	"github.com/ZedContinuum/Eris/Events"
 )
 
 //The Constants declare the name and the current Version of the Engine

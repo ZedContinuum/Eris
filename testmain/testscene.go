@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"zedcontinuum.com/Zed/Eris"
+	"github.com/ZedContinuum/Eris"
 )
 
 type myScene struct {

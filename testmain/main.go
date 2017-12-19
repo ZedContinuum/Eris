@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/markedhero/flagit"
 	"os"
-	"zedcontinuum.com/Zed/Eris"
+	"github.com/ZedContinuum/Eris"
 )
 
 func main() {
