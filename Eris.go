@@ -2,6 +2,7 @@ package Eris
 
 import (
 	"fmt"
+	"github.com/ZedContinuum/Eris/Events"
 	"github.com/ZedContinuum/mobile/app"
 	"github.com/ZedContinuum/mobile/event/key"
 	"github.com/ZedContinuum/mobile/event/lifecycle"
@@ -9,13 +10,12 @@ import (
 	"github.com/ZedContinuum/mobile/event/touch"
 	"github.com/ZedContinuum/mobile/gl"
 	"os"
-	"github.com/ZedContinuum/Eris/Events"
 )
 
 //The Constants declare the name and the current Version of the Engine
 const (
-	NAME    = "The Master"
-	VERSION = "0.01"
+	NAME    = "Eris Game Framework"
+	VERSION = "0.10"
 	TAG     = "-alpha"
 )
 
@@ -34,7 +34,7 @@ type Eris struct {
 	glctx     gl.Context
 	app       app.App
 
-	DeltaTime    float32
+	deltaTime    float32
 	SceneManager eScene
 
 	components []Engineer

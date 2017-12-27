@@ -22,8 +22,8 @@ func (t *eTime) Init(m *Eris) error {
 
 func (t *eTime) Update() {
 	t.current = time.Now().UnixNano()
-	t.master.DeltaTime = float32((t.current - t.lastFrame)) / float32(time.Second)
-	t.second += t.master.DeltaTime
+	t.master.deltaTime = float32((t.current - t.lastFrame)) / float32(time.Second)
+	t.second += t.master.deltaTime
 	if t.second >= 1 {
 		fmt.Println("Seconds passed: ", t.total, " | Frames: ", t.frames, " | Actual Second: ", t.second)
 		t.second = 0

@@ -37,7 +37,7 @@ func (s *eScene) NextScene() {
 }
 
 func (s *eScene) Update() {
-	s.activeScene.Update(s.master.DeltaTime)
+	s.activeScene.Update(s.master.deltaTime)
 }
 
 func (s *eScene) Draw() {
@@ -76,4 +76,5 @@ func (s *Scene) init(m *eScene) {
 func (s Scene) draw(glctx gl.Context) {
 	glctx.ClearColor(s.Background.R, s.Background.G, s.Background.B, s.Background.A)
 	glctx.Clear(gl.COLOR_BUFFER_BIT)
+
 }
